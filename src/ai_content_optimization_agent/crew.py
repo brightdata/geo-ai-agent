@@ -2,7 +2,7 @@ import os
 from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai_tools import BrightDataWebUnlockerTool, BrightDataSearchTool
-from .llms.gemini_google_search_llm import GeminiWithGoogleSearch
+from llms.gemini_google_search_llm import GeminiWithGoogleSearch
 
 # Read the LLM model from the envs
 MODEL = os.getenv("MODEL")
@@ -134,3 +134,4 @@ class AiContentOptimizationAgent:
             process=Process.sequential,
             verbose=True,
         )
+
