@@ -18,7 +18,7 @@ def run():
     }
 
     try:
-        print(f"Analyzing '${url}' for AI content optimization...")
+        print(f"Analyzing '{url}' for AI content optimization...")
 
         # Run the multi-agent workflow
         AiContentOptimizationAgent().crew().kickoff(inputs=inputs)
